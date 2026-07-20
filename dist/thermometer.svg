@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 69.999999 130"
+   width="70"
+   height="130"
+   version="1.1"
+   id="svg7"
+   sodipodi:docname="thermometer.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs7">
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter47"
+       x="-0.2313"
+       y="-0.075478752"
+       width="1.5876"
+       height="1.1888142">
+      <feFlood
+         result="flood"
+         in="SourceGraphic"
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         id="feFlood46" />
+      <feGaussianBlur
+         result="blur"
+         in="SourceGraphic"
+         stdDeviation="1.584 1.823"
+         id="feGaussianBlur46" />
+      <feOffset
+         result="offset"
+         in="blur"
+         dx="1"
+         dy="1"
+         id="feOffset46" />
+      <feComposite
+         result="comp1"
+         operator="in"
+         in="flood"
+         in2="offset"
+         id="feComposite46" />
+      <feComposite
+         result="fbSourceGraphic"
+         operator="over"
+         in="SourceGraphic"
+         in2="comp1"
+         id="feComposite47" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix47" />
+      <feFlood
+         id="feFlood47"
+         result="flood"
+         in="fbSourceGraphic"
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)" />
+      <feGaussianBlur
+         id="feGaussianBlur47"
+         result="blur"
+         in="fbSourceGraphic"
+         stdDeviation="1.500000" />
+      <feOffset
+         id="feOffset47"
+         result="offset"
+         in="blur"
+         dx="3"
+         dy="3" />
+      <feComposite
+         id="feComposite48"
+         result="comp1"
+         operator="in"
+         in="flood"
+         in2="offset" />
+      <feComposite
+         id="feComposite49"
+         result="comp2"
+         operator="over"
+         in="fbSourceGraphic"
+         in2="comp1" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#6b6b6b"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="3.8573849"
+     inkscape:cx="16.591551"
+     inkscape:cy="55.607622"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg7"
+     showgrid="false" />
+  <!-- Tube background -->
+  <!-- Bulb background -->
+  <!-- Fill element: tube interior — fill_direction: up
+       Clip reveals from y=89 (bottom of tube) upward; bulb is always colored separately -->
+  <!-- Bulb fill (static — always fully colored to anchor the liquid column visually) -->
+  <!-- Tube outline on top -->
+  <!-- Degree tick marks (right side) -->
+  <text
+     xml:space="preserve"
+     style="font-size:10.6667px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';text-align:center;letter-spacing:0px;word-spacing:-2px;writing-mode:lr-tb;direction:ltr;display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:1"
+     x="28.192686"
+     y="13.474373"
+     id="degrees-c"
+     inkscape:label="degrees-c"><tspan
+       sodipodi:role="line"
+       id="tspan51"
+       style="font-size:10.6667px;letter-spacing:0px;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:1"
+       x="28.192686"
+       y="13.474373">°C</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:10.6667px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';text-align:center;letter-spacing:0px;word-spacing:-2px;writing-mode:lr-tb;direction:ltr;display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-dasharray:none;stroke-opacity:1"
+     x="28.710918"
+     y="13.474373"
+     id="degrees-f"
+     inkscape:label="degrees-f"><tspan
+       sodipodi:role="line"
+       id="tspan53"
+       x="28.710918"
+       y="13.474373">°F</tspan></text>
+  <g
+     id="g1"
+     transform="translate(2.214024,-22.797783)">
+    <path
+       id="outer"
+       style="display:inline;fill:#ffffff;stroke:#ffffff;stroke-width:1.5"
+       d="m 48.838928,131.22813 a 18,18 0 0 1 -18,18 18,18 0 0 1 -18,-18 18,18 0 0 1 18,-18 18,18 0 0 1 18,18 z M 27.476057,39.228128 h 7 c 2.216,0 4,1.784 4,4 v 76.000002 c 0,2.216 -1.784,4 -4,4 h -7 c -2.216,0 -4,-1.784 -4,-4 V 43.228128 c 0,-2.216 1.784,-4 4,-4 z"
+       inkscape:label="outer"
+       sodipodi:insensitive="true" />
+    <path
+       id="fill"
+       style="fill:#00d4ff;fill-opacity:1;stroke:none;stroke-width:1.00847;filter:url(#filter47)"
+       d="m 28.685325,41.542957 h 4.67529 c 1.660682,0 2.997621,1.336939 2.997621,2.997621 v 71.233782 c 0,1.66069 -1.336939,2.99762 -2.997621,2.99762 h -4.67529 c -1.660682,0 -2.997621,-1.33693 -2.997621,-2.99762 V 44.540578 c 0,-1.660682 1.336939,-2.997621 2.997621,-2.997621 z m 18.100651,89.661523 a 16,16 0 0 1 -16,16 16,16 0 0 1 -16,-16 16,16 0 0 1 16,-16 16,16 0 0 1 16,16 z" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:-1px;word-spacing:-2px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill-opacity:1"
+       x="30.881695"
+       y="135.2876"
+       id="temp"
+       inkscape:label="Temp"
+       sodipodi:insensitive="true"><tspan
+         sodipodi:role="line"
+         id="tspan52"
+         x="30.381695"
+         y="135.2876">99.9</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:none;stroke-width:0.01;stroke-dasharray:none;stroke-opacity:1"
+       id="fill-area"
+       width="10.640552"
+       height="71.948837"
+       x="25.572453"
+       y="41.49535"
+       inkscape:label="fill-area"
+       sodipodi:insensitive="true" />
+    <rect
+       style="fill:none;fill-opacity:1"
+       id="tick-major-right"
+       width="4.8030696"
+       height="72.045998"
+       x="41.304871"
+       y="41.918125"
+       inkscape:label="tick-major-right" />
+    <rect
+       style="display:inline;fill:none;fill-opacity:1"
+       id="tick-minor-right"
+       width="3.0769675"
+       height="72.045998"
+       x="41.304871"
+       y="41.301037"
+       inkscape:label="tick-minor-right" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke-width:2.03237"
+       id="tick-text-right"
+       width="19.839163"
+       height="72.045998"
+       x="48.083557"
+       y="41.918125"
+       inkscape:label="tick-text-right" />
+    <rect
+       style="fill:none;fill-opacity:1"
+       id="tick-major-left"
+       width="4.8030696"
+       height="72.045998"
+       x="15.628985"
+       y="42.259132"
+       inkscape:label="tick-major-left" />
+    <rect
+       style="fill:none;fill-opacity:1"
+       id="tick-minor-left"
+       width="3.0769675"
+       height="72.045998"
+       x="17.440487"
+       y="42.31749"
+       inkscape:label="tick-minor-left" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke-width:1.82233"
+       id="tick-text-left"
+       width="15.950519"
+       height="72.045998"
+       x="-2.0135899"
+       y="41.918125"
+       inkscape:label="tick-text-left" />
+  </g>
+</svg>

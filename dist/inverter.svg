@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 81.905608 101.87273"
+   width="81.905609"
+   height="101.87273"
+   version="1.1"
+   id="svg29"
+   sodipodi:docname="inverter.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview29"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="4.230237"
+     inkscape:cx="21.748191"
+     inkscape:cy="29.667369"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg29" />
+  <!--
+    Vertical battery — based on AEC battery reference.
+    McFill clips data-fill bottom→top (fill_direction: up).
+    Gradient stops (data-fill-stop="0/1") are updated by McFill when fill_color2 is set.
+  -->
+  <defs
+     id="defs14">
+    <linearGradient
+       id="bv-ring"
+       x1="1.3833991"
+       y1="7.2285719"
+       x2="81.620544"
+       y2="7.2285719"
+       gradientTransform="matrix(0.9685043,0,0,1.2173557,0.75796732,-6.7019453)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#484848"
+         id="stop1" />
+      <stop
+         offset="0.28989941"
+         stop-color="#c8c8c8"
+         id="stop2" />
+      <stop
+         offset="0.66309863"
+         stop-color="#6c6c6c"
+         id="stop3" />
+      <stop
+         offset="100%"
+         stop-color="#383838"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="bv-term"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0%"
+         stop-color="#505050"
+         id="stop5" />
+      <stop
+         offset="28%"
+         stop-color="#d4d4d4"
+         id="stop6" />
+      <stop
+         offset="54%"
+         stop-color="#848484"
+         id="stop7" />
+      <stop
+         offset="100%"
+         stop-color="#404040"
+         id="stop8" />
+    </linearGradient>
+    <!-- Fill gradient: stop 0 = bottom (0%), stop 1 = top (100%) -->
+    <!-- McFill updates stop-color on data-fill-stop elements when fill_color2 is set -->
+    <linearGradient
+       id="bv-fill-grad"
+       x1="0"
+       y1="1"
+       x2="0"
+       y2="0"
+       gradientUnits="objectBoundingBox">
+      <stop
+         data-fill-stop="0"
+         offset="0%"
+         stop-color="#1cd000"
+         id="stop9" />
+      <stop
+         data-fill-stop="1"
+         offset="100%"
+         stop-color="#7ce800"
+         id="stop10" />
+    </linearGradient>
+    <linearGradient
+       id="bv-gloss"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0%"
+         stop-color="rgba(255,255,255,0.18)"
+         id="stop11" />
+      <stop
+         offset="100%"
+         stop-color="rgba(255,255,255,0)"
+         id="stop12" />
+    </linearGradient>
+    <linearGradient
+       id="bv-topfade"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="rgba(255,255,255,0.07)"
+         id="stop13" />
+      <stop
+         offset="100%"
+         stop-color="rgba(255,255,255,0)"
+         id="stop14" />
+    </linearGradient>
+    <clipPath
+       id="bv-clip">
+      <rect
+         x="5"
+         y="13"
+         width="50"
+         height="104"
+         rx="3"
+         id="rect14" />
+    </clipPath>
+  </defs>
+  <!-- Terminal nub -->
+  <!-- Body outer — metallic ring -->
+  <rect
+     x="2.097795"
+     y="2.097795"
+     width="77.710022"
+     height="97.677147"
+     rx="6.6991401"
+     fill="url(#bv-ring)"
+     id="rect17"
+     style="display:inline;fill:url(#bv-ring);stroke:#333333;stroke-width:4.19559;stroke-dasharray:none;stroke-opacity:1" />
+  <!-- Body inner — dark backing -->
+  <rect
+     x="5.4473648"
+     y="3.8577428"
+     width="71.010887"
+     height="94.157257"
+     rx="4.6893978"
+     id="rect18"
+     style="display:inline;fill:none;stroke-width:1.08582" />
+  <!-- Fill element — clipped bottom→top by McFill -->
+  <!-- Segment tick lines — 7 segments, 6 dividers -->
+  <!-- Left gloss highlight -->
+  <!-- Top-fade depth cue -->
+  <!-- Body outlines on top -->
+  <rect
+     style="fill:#333333;stroke:#666666;stroke-width:4.19559;stroke-dasharray:none;stroke-opacity:1"
+     id="rect42"
+     width="69.679825"
+     height="49.674095"
+     x="6.1128964"
+     y="8.4251842"
+     rx="6.6991401" />
+  <rect
+     x="2.097795"
+     y="2.097795"
+     width="77.710022"
+     height="97.677147"
+     rx="6.6991401"
+     fill="none"
+     stroke="rgba(255,255,255,0.22)"
+     stroke-width="0.642448"
+     id="rect28"
+     style="stroke:none;stroke-width:0.868054;stroke-dasharray:none;stroke-opacity:1" />
+  <rect
+     style="fill:#d4ff2a;stroke:#333333;stroke-width:1.35211;stroke-opacity:1"
+     id="display"
+     width="57.336552"
+     height="20.283686"
+     x="12.284532"
+     y="14.268379"
+     inkscape:label="display" />
+  <g
+     id="g42"
+     transform="matrix(1.339828,0,0,1.3645013,0.45682102,-65.329709)">
+    <g
+       id="g35"
+       transform="translate(1.7407034,1.8606957)">
+      <rect
+         style="fill:#333333;stroke:#333333;stroke-width:3.103;stroke-dasharray:none;stroke-opacity:1"
+         id="rect34"
+         width="2.4779999"
+         height="2.9280081"
+         x="12.162496"
+         y="75.452515"
+         rx="0.5" />
+      <rect
+         style="fill:#333333;stroke:#666666;stroke-width:2.61485;stroke-dasharray:none;stroke-opacity:1"
+         id="rect35"
+         width="1.905"
+         height="2.2203417"
+         x="12.44857"
+         y="75.806351"
+         rx="0.2" />
+    </g>
+    <g
+       id="g37"
+       transform="translate(11.795747,1.8606957)">
+      <rect
+         style="fill:#333333;stroke:#333333;stroke-width:3.103;stroke-dasharray:none;stroke-opacity:1"
+         id="rect36"
+         width="2.4779999"
+         height="2.9280081"
+         x="12.162496"
+         y="75.452515"
+         rx="0.5" />
+      <rect
+         style="fill:#333333;stroke:#666666;stroke-width:2.61485;stroke-dasharray:none;stroke-opacity:1"
+         id="rect37"
+         width="1.905"
+         height="2.2203417"
+         x="12.44857"
+         y="75.806351"
+         rx="0.2" />
+    </g>
+    <g
+       id="g39"
+       transform="translate(21.850791,1.8606957)">
+      <rect
+         style="fill:#333333;stroke:#333333;stroke-width:3.103;stroke-dasharray:none;stroke-opacity:1"
+         id="rect38"
+         width="2.4779999"
+         height="2.9280081"
+         x="12.162496"
+         y="75.452515"
+         rx="0.5" />
+      <rect
+         style="fill:#333333;stroke:#666666;stroke-width:2.61485;stroke-dasharray:none;stroke-opacity:1"
+         id="rect39"
+         width="1.905"
+         height="2.2203417"
+         x="12.44857"
+         y="75.806351"
+         rx="0.2" />
+    </g>
+    <g
+       id="g41"
+       transform="translate(31.905835,1.8606957)">
+      <rect
+         style="fill:#333333;stroke:#333333;stroke-width:3.103;stroke-dasharray:none;stroke-opacity:1"
+         id="rect40"
+         width="2.4779999"
+         height="2.9280081"
+         x="12.162496"
+         y="75.452515"
+         rx="0.5" />
+      <rect
+         style="fill:#333333;stroke:#666666;stroke-width:2.61485;stroke-dasharray:none;stroke-opacity:1"
+         id="rect41"
+         width="1.905"
+         height="2.2203417"
+         x="12.44857"
+         y="75.806351"
+         rx="0.2" />
+    </g>
+  </g>
+</svg>

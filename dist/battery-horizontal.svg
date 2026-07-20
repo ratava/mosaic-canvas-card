@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" width="100%" height="100%">
+  <!--
+    Horizontal battery — matching AEC-style quality.
+    McFill clips data-fill left→right (fill_direction: left).
+    Gradient stops (data-fill-stop="0/1") updated by McFill when fill_color2 is set.
+  -->
+  <defs>
+    <!-- Metallic ring: top-to-bottom sheen on horizontal body -->
+    <linearGradient id="bh-ring" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#c8c8c8"/>
+      <stop offset="30%"  stop-color="#6c6c6c"/>
+      <stop offset="60%"  stop-color="#484848"/>
+      <stop offset="100%" stop-color="#383838"/>
+    </linearGradient>
+    <!-- Terminal nub: left-to-right sheen -->
+    <linearGradient id="bh-term" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#d4d4d4"/>
+      <stop offset="35%"  stop-color="#848484"/>
+      <stop offset="100%" stop-color="#404040"/>
+    </linearGradient>
+    <!-- Fill gradient: stop 0 = left (0%), stop 1 = right (100%) -->
+    <linearGradient id="bh-fill-grad" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop data-fill-stop="0" offset="0%"   stop-color="#1cd000"/>
+      <stop data-fill-stop="1" offset="100%" stop-color="#7ce800"/>
+    </linearGradient>
+    <!-- Top gloss strip -->
+    <linearGradient id="bh-gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="rgba(255,255,255,0.18)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+    <!-- Left-fade depth cue -->
+    <linearGradient id="bh-leftfade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="rgba(255,255,255,0.07)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+    <clipPath id="bh-clip">
+      <rect x="5" y="5" width="179" height="70" rx="3"/>
+    </clipPath>
+  </defs>
+
+  <!-- Terminal nub (right / positive end) -->
+  <rect x="190" y="26" width="9" height="28" rx="3"
+        fill="url(#bh-term)" stroke="rgba(255,255,255,0.2)" stroke-width="0.8"/>
+  <rect x="190.5" y="27" width="4" height="26" rx="2.5"
+        fill="rgba(255,255,255,0.28)"/>
+
+  <!-- Body outer — metallic ring -->
+  <rect x="1" y="1" width="188" height="78" rx="5"
+        fill="url(#bh-ring)"/>
+
+  <!-- Body inner — dark backing -->
+  <rect x="3.5" y="3.5" width="183" height="73" rx="3.5"
+        fill="rgba(10,16,24,0.92)"/>
+
+  <!-- Fill element — clipped left→right by McFill -->
+  <rect x="5" y="5" width="179" height="70" rx="3"
+        fill="url(#bh-fill-grad)" data-fill="1"/>
+
+  <!-- Segment tick lines — 7 segments, 6 vertical dividers -->
+  <!-- Dividers at x = 5 + 179*k/7 for k=1..6: ~31, 57, 82, 107, 133, 158 -->
+  <g clip-path="url(#bh-clip)" opacity="0.72">
+    <rect x="30"  y="5" width="2" height="70" fill="#ffef42"/>
+    <rect x="56"  y="5" width="2" height="70" fill="#ffef42"/>
+    <rect x="82"  y="5" width="2" height="70" fill="#ffef42"/>
+    <rect x="107" y="5" width="2" height="70" fill="#ffef42"/>
+    <rect x="133" y="5" width="2" height="70" fill="#ffef42"/>
+    <rect x="158" y="5" width="2" height="70" fill="#ffef42"/>
+  </g>
+
+  <!-- Top gloss highlight -->
+  <rect x="5" y="5" width="179" height="18" rx="3"
+        fill="url(#bh-gloss)" clip-path="url(#bh-clip)"/>
+
+  <!-- Left-fade depth cue -->
+  <rect x="5" y="5" width="40" height="70"
+        fill="url(#bh-leftfade)" clip-path="url(#bh-clip)"/>
+
+  <!-- Body outlines on top -->
+  <rect x="1" y="1" width="188" height="78" rx="5"
+        fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="0.8"/>
+  <rect x="3.5" y="3.5" width="183" height="73" rx="3.5"
+        fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="0.5"/>
+</svg>

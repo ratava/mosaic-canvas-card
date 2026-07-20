@@ -1,0 +1,110 @@
+{
+  "_comment": "Mosaic Canvas Card — Seed Defaults. Edit on the HA server without a rebuild. Keys are flat; all are optional overrides at the card level via the editor.",
+
+  "mono_font_family": "'Courier New', monospace",
+
+  "field_gap": 4,
+  "column_gap": 3,
+  "extended_field_gap": 8,
+  "columns": 2,
+  "card_columns": 1,
+  "align": "left",
+  "anchor": "top-left",
+  "label_position": "above",
+  "font_size": 14,
+  "icon_size": 20,
+
+  "box_border_width": 1,
+  "box_border_color": "#00d4ff",
+  "box_radius": 0,
+  "box_padding": 0,
+  "box_background_alpha": 1,
+
+  "fill_color": "#00d4ff",
+  "fill_direction": "up",
+  "fill_min": 0,
+  "fill_max": 100,
+  "fill_shape": "cylinder",
+
+  "gauge_label_color": "#cccccc",
+  "gauge_label_size": 11,
+
+  "thermo_tick_color": "rgba(255,255,255,0.7)",
+  "thermo_tick_font_size": 4,
+  "thermo_fill_opacity_above": 0.5,
+  "thermo_grid_color": "rgba(255,255,255,0.25)",
+  "thermo_minor_tick_width": 0.5,
+  "thermo_major_tick_width": 0.75,
+  "thermo_major_tick_length": 4.803,
+  "thermo_minor_tick_length": 3.077,
+  "thermo_decimals": 1,
+  "thermo_temp_color": "#ffffff",
+  "thermo_temp_font_size": 10,
+  "thermo_text_position": "right",
+  "thermo_show_minor_tick_text": false,
+  "thermo_fill_color": "#00d4ff",
+  "thermo_h_fill_color": "#00d4ff",
+
+  "battery_h_fill_color": "#22c55e",
+  "battery_v_fill_color": "#22c55e",
+
+  "tank_cylinder_fill_color": "#00d4ff",
+  "tank_cylinder_fill_direction": "up",
+
+  "tank_water_fill_color": "#00d4ff",
+  "tank_water_fill_direction": "up",
+
+  "tank_fermenter_fill_color": "#00d4ff",
+  "tank_fermenter_fill_direction": "up",
+
+  "tank_cone_fill_color": "#00d4ff",
+  "tank_cone_fill_direction": "up",
+
+  "inverter_line_color": "#00d4ff",
+
+  "gauge_arc_needle_color": "#f07020",
+  "gauge_arc_label_color": "#cccccc",
+  "gauge_arc_label_size": 11,
+
+  "graph_bar_v_width": 200,
+  "graph_bar_v_height": 130,
+  "graph_gauge_width": 180,
+  "graph_time_chart_width": 260,
+  "graph_time_chart_height": 120,
+  "graph_type": "bar",
+  "graph_show_axes": true,
+  "graph_show_legend": false,
+  "graph_stroke_width": 1.5,
+  "graph_fill_opacity": 0.2,
+  "graph_min": 0,
+  "graph_max": 100,
+  "graph_hours": 24,
+
+  "flow_color": "#00d4ff",
+  "flow_width": 3,
+  "flow_style": "dashes",
+  "flow_curve": "straight",
+  "flow_duration": 2,
+  "flow_particle_count": 6,
+  "flow_speed_min_duration": 5,
+  "flow_speed_max_duration": 1,
+
+  "virtual_mode": "percent",
+  "virtual_label_max": "Full",
+  "virtual_label_min": "Empty",
+
+  "stat_update_interval": 5,
+  "stat_type": "sum",
+  "stat_type_history": "mean",
+  "stat_period_minutes_n": 60,
+  "stat_period_hours_n": 1,
+  "stat_period_days_n": 7,
+  "stat_period_months_n": 1,
+
+  "background_fit": "cover",
+  "sun_entity": "sun.sun",
+  "canvas_fallback_width": 1000,
+
+  "decimals_w": 0,
+  "decimals_mwh": 2
+}
