@@ -1,0 +1,19 @@
+docs:
+  - title: "Home"
+    url: /
+  - title: "Installation"
+    url: /installation/
+  - title: "Core Concepts"
+    url: /concepts/
+  - title: "Editor Guide"
+    children:
+      - title: "Overview"
+        url: /editor/
+      - title: "Cards tab"
+        url: /editor/cards/
+      - title: "Elements tab"
+        url: /editor/elements/
+      - title: "Settings tab"
+        url: /editor/settings/
+  - title: "Changelog"
+    url: https://github.com/ratava/mosaic-canvas-card/releases
