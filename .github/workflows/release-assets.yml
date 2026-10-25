@@ -1,0 +1,49 @@
+name: Attach release assets
+
+# Builds the card from the tagged source and uploads every output file as an
+# individual release asset — the advanced-camera-card pattern. HACS installs a
+# plugin's release assets verbatim, so the assets must be exactly the card
+# files: no archives, no extras (anything attached lands in every user's
+# www/community folder). The payoff is GitHub's per-asset download_count on
+# mosaic-canvas-card.js, which is the install counter.
+#
+# The assets come from this build, not the committed dist/, so what users
+# install is reproducible from the published source (HACS default review,
+# hacs/default#9729). The build goes to its own emptied directory: dist/ also
+# holds files the release build doesn't write, and a clean out-of-tree build
+# produces exactly the tracked dist/ file set.
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout release tag
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.release.tag_name }}
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build release bundle
+        run: npx vite build --config vite.config.prod.ts --outDir release-dist --emptyOutDir
+
+      - name: Upload built files to release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release upload "${{ github.event.release.tag_name }}" release-dist/* \
+            --repo "${{ github.repository }}" \
+            --clobber

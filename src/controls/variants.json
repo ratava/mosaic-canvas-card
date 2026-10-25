@@ -1,0 +1,186 @@
+{
+  "button": [
+    { "id": "generic", "label": "Button", "icon": "mdi:gesture-tap-button",
+      "preset": { "option_icon_position": "left" } },
+    { "id": "icon_above", "label": "Icon above label", "icon": "mdi:card-text-outline",
+      "preset": { "option_icon_position": "above" } },
+    { "id": "with_state", "label": "Icon, label and state", "icon": "mdi:card-bulleted-outline",
+      "preset": { "option_icon_position": "above", "option_show_state": true, "option_state_position": "below" } }
+  ],
+  "toggle": [
+    { "id": "switch",   "label": "Switch",   "icon": "mdi:toggle-switch-outline",   "render": "switch",   "preset": { "toggle_variant": "switch" } },
+    { "id": "checkbox", "label": "Checkbox", "icon": "mdi:checkbox-marked-outline", "render": "checkbox", "preset": { "toggle_variant": "checkbox" } }
+  ],
+  "slider": [
+    { "id": "generic", "label": "Slider", "icon": "mdi:tune-variant" },
+    {
+      "id": "brightness",
+      "label": "Brightness",
+      "icon": "mdi:brightness-6",
+      "domain": ["light"],
+      "preset": {
+        "control_service": "light.turn_on",
+        "control_service_data": { "brightness_pct": "{value}" },
+        "read_attribute": "brightness",
+        "read_scale": 2.55,
+        "min": 0, "max": 100, "step": 1, "unit": "%",
+        "control_labels": [{ "icon": "mdi:brightness-6" }],
+        "control_labels_position": "left",
+        "slider_labels": { "left": { "text": "0%" }, "center": { "text": "50%" }, "right": { "text": "100%" } }
+      }
+    },
+    {
+      "id": "volume",
+      "label": "Volume",
+      "icon": "mdi:volume-high",
+      "domain": ["media_player"],
+      "preset": {
+        "control_service": "media_player.volume_set",
+        "control_service_data": { "volume_level": "{value}" },
+        "value_scale": 0.01,
+        "read_attribute": "volume_level",
+        "read_scale": 0.01,
+        "min": 0, "max": 100, "step": 1, "unit": "%",
+        "control_labels": [{ "icon": "mdi:volume-high" }],
+        "control_labels_position": "left",
+        "slider_labels": { "left": { "icon": "mdi:volume-low" }, "right": { "icon": "mdi:volume-high" } }
+      }
+    },
+    {
+      "id": "color_temp",
+      "label": "Colour Temperature",
+      "icon": "mdi:thermometer",
+      "domain": ["light"],
+      "preset": {
+        "control_service": "light.turn_on",
+        "control_service_data": { "color_temp_kelvin": "{value}" },
+        "read_attribute": "color_temp_kelvin",
+        "min": 2000, "max": 6500, "step": 100, "unit": "K",
+        "control_labels": [{ "icon": "mdi:sun-thermometer-outline" }],
+        "control_labels_position": "left",
+        "slider_labels": { "left": { "text": "Warm" }, "right": { "text": "Cool" } }
+      }
+    },
+    {
+      "id": "cover_position",
+      "label": "Cover Position",
+      "icon": "mdi:window-shutter",
+      "domain": ["cover"],
+      "preset": {
+        "control_service": "cover.set_cover_position",
+        "control_service_data": { "position": "{value}" },
+        "read_attribute": "current_position",
+        "min": 0, "max": 100, "step": 1, "unit": "%",
+        "control_labels": [{ "icon": "mdi:window-shutter" }],
+        "control_labels_position": "left",
+        "slider_labels": { "left": { "text": "Closed" }, "right": { "text": "Open" } }
+      }
+    },
+    {
+      "id": "fan_speed",
+      "label": "Fan Speed",
+      "icon": "mdi:fan",
+      "domain": ["fan"],
+      "preset": {
+        "control_service": "fan.set_percentage",
+        "control_service_data": { "percentage": "{value}" },
+        "read_attribute": "percentage",
+        "min": 0, "max": 100, "step": 1, "unit": "%",
+        "control_labels": [{ "icon": "mdi:fan" }],
+        "control_labels_position": "left"
+      }
+    }
+  ],
+  "dropdown": [
+    { "id": "generic", "label": "Dropdown", "icon": "mdi:form-dropdown", "preset": { "options_source": "entity" } },
+    {
+      "id": "light_effect",
+      "label": "Light Effect",
+      "icon": "mdi:auto-fix",
+      "domain": ["light"],
+      "preset": {
+        "control_service": "light.turn_on",
+        "control_service_data": { "effect": "{value}" },
+        "options_source": "entity",
+        "options_attribute": "effect_list",
+        "read_attribute": "effect"
+      }
+    },
+    {
+      "id": "media_source",
+      "label": "Media Source",
+      "icon": "mdi:import",
+      "domain": ["media_player"],
+      "preset": {
+        "control_service": "media_player.select_source",
+        "control_service_data": { "source": "{value}" },
+        "options_source": "entity",
+        "options_attribute": "source_list",
+        "read_attribute": "source"
+      }
+    },
+    {
+      "id": "media_sound_mode",
+      "label": "Sound Mode",
+      "icon": "mdi:surround-sound",
+      "domain": ["media_player"],
+      "preset": {
+        "control_service": "media_player.select_sound_mode",
+        "control_service_data": { "sound_mode": "{value}" },
+        "options_source": "entity",
+        "options_attribute": "sound_mode_list",
+        "read_attribute": "sound_mode"
+      }
+    }
+  ],
+  "button_group": [
+    { "id": "generic", "label": "Generic", "icon": "mdi:view-dashboard-variant-outline", "preset": { "options_source": "entity", "button_group_layout": "row" } },
+    {
+      "id": "hvac_mode",
+      "label": "HVAC Mode",
+      "icon": "mdi:thermostat",
+      "domain": ["climate"],
+      "preset": {
+        "control_service": "climate.set_hvac_mode",
+        "control_service_data": { "hvac_mode": "{value}" },
+        "options_source": "entity",
+        "options_attribute": "hvac_modes",
+        "button_group_layout": "wrap"
+      }
+    },
+    {
+      "id": "fan_preset",
+      "label": "Fan Preset",
+      "icon": "mdi:fan-auto",
+      "domain": ["fan"],
+      "preset": {
+        "control_service": "fan.set_preset_mode",
+        "control_service_data": { "preset_mode": "{value}" },
+        "options_source": "entity",
+        "options_attribute": "preset_modes",
+        "read_attribute": "preset_mode",
+        "button_group_layout": "wrap"
+      }
+    }
+  ],
+  "input": [
+    { "id": "text",   "label": "Text",   "icon": "mdi:form-textbox",       "preset": { "submit_on": "change" } }
+  ],
+  "spinbox": [
+    { "id": "generic", "label": "Spin Box", "icon": "mdi:numeric", "preset": { "min": 0, "max": 100, "step": 1 } },
+    {
+      "id": "target_temp",
+      "label": "Target Temperature",
+      "icon": "mdi:thermometer",
+      "domain": ["climate"],
+      "preset": {
+        "control_service": "climate.set_temperature",
+        "control_service_data": { "temperature": "{value}" },
+        "read_attribute": "temperature",
+        "min": 7, "max": 35, "step": 0.5, "unit": "°",
+        "control_labels": [{ "icon": "mdi:thermometer" }],
+        "control_labels_position": "left"
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "backgrounds": [
+    {
+      "file": "brick_house_day_1_EV.webp",
+      "name": "Brick house day 1 EV"
+    },
+    {
+      "file": "brick_house_day_2_EV.webp",
+      "name": "Brick house day 2 EV"
+    },
+    {
+      "file": "brick_house_day_no_EV.webp",
+      "name": "Brick house day no EV"
+    },
+    {
+      "file": "brick_house_night_1_EV.webp",
+      "name": "Brick house night 1 EV"
+    },
+    {
+      "file": "brick_house_night_2_EV.webp",
+      "name": "Brick house night 2 EV"
+    },
+    {
+      "file": "brick_house_night_no_EV.webp",
+      "name": "Brick house night no EV"
+    },
+    {
+      "file": "white_house_day_1_ev.webp",
+      "name": "White house day 1 EV"
+    },
+    {
+      "file": "white_house_day_2_ev.webp",
+      "name": "White house day 2 EV"
+    },
+    {
+      "file": "white_house_day_no_ev.webp",
+      "name": "White house day no EV"
+    },
+    {
+      "file": "white_house_night_1_ev.webp",
+      "name": "White house night 1 EV"
+    },
+    {
+      "file": "white_house_night_2_ev.webp",
+      "name": "White house night 2 EV"
+    },
+    {
+      "file": "white_house_night_no_ev.webp",
+      "name": "White house night no EV"
+    }
+  ]
+}
