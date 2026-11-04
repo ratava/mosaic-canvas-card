@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg width="72.828575mm" height="199.64601mm" viewBox="0 0 72.828575 199.64601" version="1.1" id="svg1" sodipodi:docname="tank-cylinder.svg" inkscape:version="1.4.3 (0d15f75, 2025-12-25)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+<sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:document-units="mm" inkscape:zoom="0.70324683" inkscape:cx="-455.03227" inkscape:cy="635.6232" inkscape:window-width="2540" inkscape:window-height="1360" inkscape:window-x="4484" inkscape:window-y="0" inkscape:window-maximized="0" inkscape:current-layer="layer1" />
+<defs id="defs1" />
+<g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(-68.576836,-65.516932)">
+<path id="fill" style="display:inline;fill:#00d4ff;stroke:none" inkscape:label="fill" d="M 69.649481,79.888979 H 139.88732 V 252.0394 A 35.120819,12.724936 0 0 1 104.77015,264.76434 35.120819,12.724936 0 0 1 69.649481,252.0394 Z" />
+<rect id="fill-area" style="fill:none;stroke:none" inkscape:label="fill-area" x="69.649483" y="79.888977" width="70.237839" height="184.87535" />
+<path id="tank" style="display:inline;fill:none;stroke:#808080;stroke-width:2;stroke-dasharray:none" inkscape:label="tank" d="M 140.17333,252.0394 V 79.888979 m -70.289521,0.07853 -0.07854,171.443601 m 70.367301,0.48486 a 35.120819,12.724936 0 0 1 -35.11641,12.52327 35.120819,12.724936 0 0 1 -35.120822,-12.72493 35.120819,12.724936 0 0 1 0.0047,-0.20735 M 140.17698,79.998177 A 35.120819,12.724936 0 0 1 105.05616,92.723112 35.120819,12.724936 0 0 1 69.935338,79.998177 35.120819,12.724936 0 0 1 105.05616,67.273241 35.120819,12.724936 0 0 1 140.17698,79.998177 Z" />
+<ellipse style="display:inline;fill:#808080" id="tank-top" cx="104.99113" cy="79.801521" rx="35.120819" ry="12.724936" inkscape:label="tank-top" />
+</g>
+</svg>

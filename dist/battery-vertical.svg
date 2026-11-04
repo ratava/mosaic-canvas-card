@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 122" width="100%" height="100%">
+  <!--
+    Vertical battery — based on AEC battery reference.
+    McFill clips data-fill bottom→top (fill_direction: up).
+    Gradient stops (data-fill-stop="0/1") are updated by McFill when fill_color2 is set.
+  -->
+  <defs>
+    <linearGradient id="bv-ring" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#484848"/>
+      <stop offset="22%"  stop-color="#c8c8c8"/>
+      <stop offset="50%"  stop-color="#6c6c6c"/>
+      <stop offset="100%" stop-color="#383838"/>
+    </linearGradient>
+    <linearGradient id="bv-term" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#505050"/>
+      <stop offset="28%"  stop-color="#d4d4d4"/>
+      <stop offset="54%"  stop-color="#848484"/>
+      <stop offset="100%" stop-color="#404040"/>
+    </linearGradient>
+    <!-- Fill gradient: stop 0 = bottom (0%), stop 1 = top (100%) -->
+    <!-- McFill updates stop-color on data-fill-stop elements when fill_color2 is set -->
+    <linearGradient id="bv-fill-grad" x1="0" y1="1" x2="0" y2="0" gradientUnits="objectBoundingBox">
+      <stop data-fill-stop="0" offset="0%"   stop-color="#1cd000"/>
+      <stop data-fill-stop="1" offset="100%" stop-color="#7ce800"/>
+    </linearGradient>
+    <linearGradient id="bv-gloss" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="rgba(255,255,255,0.18)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+    <linearGradient id="bv-topfade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="rgba(255,255,255,0.07)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+    <clipPath id="bv-clip">
+      <rect x="5" y="13" width="50" height="104" rx="3"/>
+    </clipPath>
+  </defs>
+
+  <!-- Terminal nub -->
+  <rect x="18" y="1" width="24" height="10" rx="3"
+        fill="url(#bv-term)" stroke="rgba(255,255,255,0.2)" stroke-width="0.8"/>
+  <rect x="19" y="1.5" width="22" height="4" rx="2.5"
+        fill="rgba(255,255,255,0.28)"/>
+
+  <!-- Body outer — metallic ring -->
+  <rect x="1" y="10" width="58" height="111" rx="5"
+        fill="url(#bv-ring)"/>
+
+  <!-- Body inner — dark backing -->
+  <rect x="3.5" y="12" width="53" height="107" rx="3.5"
+        fill="rgba(10,16,24,0.92)"/>
+
+  <!-- Fill element — clipped bottom→top by McFill -->
+  <rect x="5" y="13" width="50" height="104" rx="3"
+        fill="url(#bv-fill-grad)" data-fill="1"/>
+
+  <!-- Segment tick lines — 7 segments, 6 dividers -->
+  <g clip-path="url(#bv-clip)" opacity="0.72">
+    <rect x="5" y="27"  width="50" height="2" fill="#ffef42"/>
+    <rect x="5" y="42"  width="50" height="2" fill="#ffef42"/>
+    <rect x="5" y="57"  width="50" height="2" fill="#ffef42"/>
+    <rect x="5" y="71"  width="50" height="2" fill="#ffef42"/>
+    <rect x="5" y="86"  width="50" height="2" fill="#ffef42"/>
+    <rect x="5" y="101" width="50" height="2" fill="#ffef42"/>
+  </g>
+
+  <!-- Left gloss highlight -->
+  <rect x="5" y="13" width="14" height="104" rx="3"
+        fill="url(#bv-gloss)" clip-path="url(#bv-clip)"/>
+
+  <!-- Top-fade depth cue -->
+  <rect x="5" y="13" width="50" height="32"
+        fill="url(#bv-topfade)" clip-path="url(#bv-clip)"/>
+
+  <!-- Body outlines on top -->
+  <rect x="1" y="10" width="58" height="111" rx="5"
+        fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="0.8"/>
+  <rect x="3.5" y="12" width="53" height="107" rx="3.5"
+        fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="0.5"/>
+</svg>
